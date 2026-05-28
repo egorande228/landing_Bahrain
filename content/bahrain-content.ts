@@ -18,6 +18,7 @@ type FeatureCard = {
   description: string;
   badge?: string;
   highlights?: string[];
+  cta?: LinkItem;
   icon?: IconName;
   metric?: MetricItem;
   media?: MediaReference;
@@ -211,6 +212,23 @@ const gamesCardCtaByLocale: Record<Locale, LinkItem> = {
   },
 };
 
+const offersCardCtaByLocale: Record<Locale, LinkItem> = {
+  ar: {
+    label: "احصل الآن",
+    href: "https://refpa3665.com/L?tag=d_4092175m_66329c_MLBBahrain26",
+    variant: "secondary",
+    icon: "arrow",
+    external: true,
+  },
+  en: {
+    label: "Claim now",
+    href: "https://refpa3665.com/L?tag=d_4092175m_66329c_MLBBahrain26",
+    variant: "secondary",
+    icon: "arrow",
+    external: true,
+  },
+};
+
 const sportsCardLinkByLocale: Record<Locale, LinkItem> = {
   ar: {
     label: "\u0627\u0641\u062A\u062D \u0627\u0644\u0631\u064A\u0627\u0636\u0629",
@@ -383,6 +401,7 @@ const marketContent: Localized<BahrainMarketContent> = {
             description:
               "إذا كانت هناك عروض للاعبين الجدد فستصل إليها بسرعة مع شرح مختصر وخطوة واضحة.",
             badge: "Welcome",
+            cta: offersCardCtaByLocale.ar,
             icon: "gift",
             media: media("home-offers-welcome"),
           },
@@ -391,6 +410,7 @@ const marketContent: Localized<BahrainMarketContent> = {
             description:
               "تابع الهدايا، الرهانات المجانية، أو اللفات المجانية حسب الحملات المتاحة في وقتك.",
             badge: "Rewards",
+            cta: offersCardCtaByLocale.ar,
             icon: "star",
             media: media("home-offers-rewards"),
           },
@@ -901,6 +921,7 @@ const marketContent: Localized<BahrainMarketContent> = {
             description:
               "If there is a player-start offer available, you can reach it quickly with a short explanation and a clear next step.",
             badge: "Welcome",
+            cta: offersCardCtaByLocale.en,
             icon: "gift",
             media: media("home-offers-welcome"),
           },
@@ -909,6 +930,7 @@ const marketContent: Localized<BahrainMarketContent> = {
             description:
               "Track gifts, free bets, or free spins through the campaigns available at the time you visit.",
             badge: "Rewards",
+            cta: offersCardCtaByLocale.en,
             icon: "star",
             media: media("home-offers-rewards"),
           },

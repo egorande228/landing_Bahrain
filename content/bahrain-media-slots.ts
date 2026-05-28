@@ -181,7 +181,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "partnership-hero",
     page: "partnership",
     section: "hero",
-    targetPath: "/partnership/bahrain-partner-hero.png",
+    targetPath: "/partnership/hero.png",
     ratio: "16:10",
     fit: "contain",
     alt: {
@@ -196,7 +196,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "partnership-benefits",
     page: "partnership",
     section: "benefits",
-    targetPath: "/partnership/bahrain-benefits.png",
+    targetPath: "/partnership/benefits.png",
     ratio: "16:10",
     fit: "cover",
     alt: {
@@ -211,7 +211,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "partnership-tools",
     page: "partnership",
     section: "tools",
-    targetPath: "/partnership/bahrain-tools.png",
+    targetPath: "/partnership/tools.png",
     ratio: "16:10",
     fit: "contain",
     alt: {
@@ -256,7 +256,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "partnership-final-cta",
     page: "partnership",
     section: "final-cta",
-    targetPath: "/partnership/bahrain-final-cta.png",
+    targetPath: "/partnership/final-cta.png",
     ratio: "16:10",
     fit: "cover",
     alt: {
@@ -271,7 +271,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "faq-support",
     page: "faq",
     section: "support",
-    targetPath: "/support/bahrain-faq.png",
+    targetPath: "/support/faq.png",
     ratio: "16:10",
     fit: "cover",
     alt: {

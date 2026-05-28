@@ -1,5 +1,6 @@
 import SectionHeader from "@/components/layout/SectionHeader";
 import SectionShell from "@/components/layout/SectionShell";
+import ButtonLink from "@/components/ui/ButtonLink";
 import MediaSlot from "@/components/ui/MediaSlot";
 import MotionGroup from "@/components/ui/MotionGroup";
 import Icon from "@/components/ui/Icon";
@@ -34,6 +35,11 @@ export default function HomeOffersSection({
               ) : null}
               <h3 className="card-title">{card.title}</h3>
               <p className="card-body">{card.description}</p>
+              {card.cta ? (
+                <div className="card-footer offer-card__footer">
+                  <ButtonLink className="button-link--compact" item={card.cta} locale={locale} />
+                </div>
+              ) : null}
             </article>
           ))}
         </div>
