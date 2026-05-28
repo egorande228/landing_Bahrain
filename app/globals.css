@@ -411,6 +411,23 @@ svg {
   gap: 0.9rem;
 }
 
+.hero-actions {
+  display: grid;
+  width: fit-content;
+  gap: 0.72rem;
+  justify-items: start;
+}
+
+.hero-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.hero-contact-row .button-link {
+  width: fit-content;
+}
+
 .button-link {
   display: inline-flex;
   min-height: 52px;
@@ -1541,6 +1558,18 @@ svg {
 
   .button-link {
     width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-contact-row {
+    flex-direction: row;
+  }
+
+  .hero-contact-row .button-link {
+    width: fit-content;
   }
 
   .section-eyebrow {

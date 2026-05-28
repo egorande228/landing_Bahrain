@@ -2,7 +2,10 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import MediaSlot from "@/components/ui/MediaSlot";
 import MotionGroup from "@/components/ui/MotionGroup";
 import SectionShell from "@/components/layout/SectionShell";
-import type { BahrainHomeContent } from "@/content/bahrain-content";
+import {
+  getBahrainPathContactActions,
+  type BahrainHomeContent,
+} from "@/content/bahrain-content";
 import type { Locale } from "@/lib/site-types";
 
 export default function HomeHero({
@@ -12,6 +15,8 @@ export default function HomeHero({
   content: BahrainHomeContent["hero"];
   locale: Locale;
 }) {
+  const contactActions = getBahrainPathContactActions(locale);
+
   return (
     <SectionShell className="hero-section" id="top">
       <MotionGroup variant="up">
@@ -27,9 +32,22 @@ export default function HomeHero({
               {content.description}
             </p>
 
-            <div className="button-row" data-reveal>
-              <ButtonLink item={content.primaryCta} locale={locale} />
-              <ButtonLink item={content.secondaryCta} locale={locale} />
+            <div className="hero-actions" data-reveal>
+              <div className="button-row">
+                <ButtonLink item={content.primaryCta} locale={locale} />
+                <ButtonLink item={content.secondaryCta} locale={locale} />
+              </div>
+
+              <div className="hero-contact-row">
+                {contactActions.map((action) => (
+                  <ButtonLink
+                    className="button-link--compact"
+                    item={action}
+                    key={action.href}
+                    locale={locale}
+                  />
+                ))}
+              </div>
             </div>
 
             <ul className="hero-points" data-reveal>
