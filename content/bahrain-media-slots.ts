@@ -10,13 +10,8 @@ export type BahrainMediaSlotId =
   | "home-offers-welcome"
   | "home-offers-rewards"
   | "home-final-cta"
-  | "partnership-hero"
-  | "partnership-benefits"
-  | "partnership-tools"
   | "partnership-partner-route"
   | "partnership-agent-route"
-  | "partnership-final-cta"
-  | "faq-support";
 
 export type BahrainMediaSlot = {
   id: BahrainMediaSlotId;
@@ -46,7 +41,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-hero-stage",
     page: "home",
     section: "hero",
-    targetPath: "/player/hero/hero.png",
+    targetPath: "/player/hero/hero.webp",
     ratio: "4:3",
     fit: "cover",
     alt: {
@@ -61,7 +56,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-casino-discovery",
     page: "home",
     section: "games",
-    targetPath: "/player/games/casino.png",
+    targetPath: "/player/games/casino.webp",
     ratio: "4:3",
     fit: "cover",
     alt: {
@@ -76,7 +71,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-slots",
     page: "home",
     section: "games",
-    targetPath: "/player/games/slots.png",
+    targetPath: "/player/games/slots.webp",
     ratio: "4:3",
     fit: "cover",
     alt: {
@@ -91,7 +86,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-live-games",
     page: "home",
     section: "games",
-    targetPath: "/player/games/live.png",
+    targetPath: "/player/games/live.webp",
     ratio: "4:3",
     fit: "cover",
     alt: {
@@ -106,7 +101,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-football",
     page: "home",
     section: "sports",
-    targetPath: "/player/sports/football.png",
+    targetPath: "/player/sports/football.webp",
     ratio: "5:6",
     fit: "cover",
     alt: {
@@ -121,7 +116,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-live-match",
     page: "home",
     section: "sports",
-    targetPath: "/player/sports/match.png",
+    targetPath: "/player/sports/match.webp",
     ratio: "4:3",
     fit: "cover",
     alt: {
@@ -136,7 +131,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-offers-welcome",
     page: "home",
     section: "offers",
-    targetPath: "/offer/welcome.png",
+    targetPath: "/offer/welcome.webp",
     ratio: "16:10",
     fit: "contain",
     alt: {
@@ -151,7 +146,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-offers-rewards",
     page: "home",
     section: "offers",
-    targetPath: "/offer/rewards.png",
+    targetPath: "/offer/rewards.webp",
     ratio: "16:10",
     fit: "contain",
     alt: {
@@ -166,7 +161,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "home-final-cta",
     page: "home",
     section: "final-cta",
-    targetPath: "/player/final.png",
+    targetPath: "/player/final.webp",
     ratio: "16:10",
     fit: "cover",
     alt: {
@@ -177,56 +172,11 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     visualIntent: "Strong closing media shell that feels complete without final art.",
     overlaySafeArea: "Keep the left third readable for closing copy.",
   },
-  "partnership-hero": {
-    id: "partnership-hero",
-    page: "partnership",
-    section: "hero",
-    targetPath: "/partnership/hero.png",
-    ratio: "16:10",
-    fit: "contain",
-    alt: {
-      ar: "مشهد افتتاحي للشراكة يوضح العمل والدعم والأدوات.",
-      en: "Partnership hero visual focused on growth tools and operational support.",
-    },
-    fallbackType: "partnership-panel",
-    visualIntent: "Operational stage with a premium dashboard posture.",
-    overlaySafeArea: "Keep the center-left free for a stats stack.",
-  },
-  "partnership-benefits": {
-    id: "partnership-benefits",
-    page: "partnership",
-    section: "benefits",
-    targetPath: "/partnership/benefits.png",
-    ratio: "16:10",
-    fit: "cover",
-    alt: {
-      ar: "لوحة دعم تشغيلي ومتابعة يومية للشركاء والوكلاء.",
-      en: "Benefits visual showing operational support for partners and agents.",
-    },
-    fallbackType: "partnership-panel",
-    visualIntent: "Support-focused panel with guided structure and confidence.",
-    overlaySafeArea: "Keep the right side safe for brief notes.",
-  },
-  "partnership-tools": {
-    id: "partnership-tools",
-    page: "partnership",
-    section: "tools",
-    targetPath: "/partnership/tools.png",
-    ratio: "16:10",
-    fit: "contain",
-    alt: {
-      ar: "تصور لأدوات التتبع والتقارير والدعم التسويقي.",
-      en: "Tools and dashboard visual for tracking and campaign support.",
-    },
-    fallbackType: "partnership-panel",
-    visualIntent: "Dashboard-style showcase with clean surfaces and controlled glow.",
-    overlaySafeArea: "Keep top-right open for compact UI overlays.",
-  },
   "partnership-partner-route": {
     id: "partnership-partner-route",
     page: "partnership",
     section: "paths",
-    targetPath: "/partnership/partner.png",
+    targetPath: "/partnership/partner.webp",
     ratio: "16:9",
     fit: "contain",
     alt: {
@@ -241,7 +191,7 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     id: "partnership-agent-route",
     page: "partnership",
     section: "paths",
-    targetPath: "/partnership/agent.png",
+    targetPath: "/partnership/agent.webp",
     ratio: "16:9",
     fit: "contain",
     alt: {
@@ -251,36 +201,6 @@ const mediaSlots: Record<BahrainMediaSlotId, BahrainMediaSlot> = {
     fallbackType: "partnership-panel",
     visualIntent: "Local support route with structure and trust cues.",
     overlaySafeArea: "Keep center clear for a compact device mockup feel.",
-  },
-  "partnership-final-cta": {
-    id: "partnership-final-cta",
-    page: "partnership",
-    section: "final-cta",
-    targetPath: "/partnership/final-cta.png",
-    ratio: "16:10",
-    fit: "cover",
-    alt: {
-      ar: "مشهد ختامي للشراكة مع قناة تواصل واضحة.",
-      en: "Closing partnership visual with clear manager-contact intent.",
-    },
-    fallbackType: "partnership-panel",
-    visualIntent: "Confident closing panel that points toward action.",
-    overlaySafeArea: "Keep left side readable for CTA copy.",
-  },
-  "faq-support": {
-    id: "faq-support",
-    page: "faq",
-    section: "support",
-    targetPath: "/support/faq.png",
-    ratio: "16:10",
-    fit: "cover",
-    alt: {
-      ar: "لوحة دعم نهائية للأسئلة السريعة والتواصل.",
-      en: "Support visual for FAQ and quick contact guidance.",
-    },
-    fallbackType: "support-panel",
-    visualIntent: "Compact support panel with calm structure and premium finish.",
-    overlaySafeArea: "Keep the upper-left free for small badges.",
   },
 };
 

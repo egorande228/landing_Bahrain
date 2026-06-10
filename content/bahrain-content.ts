@@ -87,11 +87,9 @@ export type BahrainPartnershipContent = {
     secondaryCta: LinkItem;
     metrics: MetricItem[];
     statLine: string;
-    media: MediaReference;
   };
   benefits: SectionHeadingContent & {
     cards: FeatureCard[];
-    media: MediaReference;
   };
   steps: SectionHeadingContent & {
     items: ListItem[];
@@ -100,7 +98,6 @@ export type BahrainPartnershipContent = {
     cards: RouteCard[];
   };
   tools: SectionHeadingContent & {
-    media: MediaReference;
     cards: FeatureCard[];
     checklist: string[];
   };
@@ -108,7 +105,6 @@ export type BahrainPartnershipContent = {
     primaryCta: LinkItem;
     secondaryCta: LinkItem;
     contacts: ContactCard[];
-    media: MediaReference;
   };
 };
 
@@ -129,7 +125,6 @@ export type BahrainFaqContent = {
   };
   support: SectionHeadingContent & {
     contacts: ContactCard[];
-    media: MediaReference;
   };
 };
 
@@ -475,7 +470,6 @@ const marketContent: Localized<BahrainMarketContent> = {
           { value: "24/7", label: "قنوات دعم وتشغيل" },
         ],
         statLine: "الشروط وطريقة الاتفاق تختلف حسب الدور، الحجم، وطريقة العمل.",
-        media: media("partnership-hero"),
       },
       benefits: {
         eyebrow: "لماذا هذا المسار",
@@ -504,7 +498,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             icon: "cashier",
           },
         ],
-        media: media("partnership-benefits"),
       },
       steps: {
         eyebrow: "خطوات البدء",
@@ -581,7 +574,6 @@ const marketContent: Localized<BahrainMarketContent> = {
         title: "أدوات متابعة، دعم تسويقي، ومسار تشغيل يساعدك على الاستمرار.",
         description:
           "بعد اختيار الدور تحتاج إلى شيء عملي: تقارير، متابعة، مواد جاهزة، وتنسيق واضح مع مديرك.",
-        media: media("partnership-tools"),
         cards: [
           {
             title: "تقارير أوضح",
@@ -645,7 +637,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             external: true,
           },
         ],
-        media: media("partnership-final-cta"),
       },
     },
     faq: {
@@ -759,7 +750,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             icon: "message",
           },
         ],
-        media: media("faq-support"),
       },
     },
   },
@@ -995,7 +985,6 @@ const marketContent: Localized<BahrainMarketContent> = {
           { value: "24/7", label: "Support and operating rhythm" },
         ],
         statLine: "Terms and structure depend on the role, volume, and the agreement with the manager.",
-        media: media("partnership-hero"),
       },
       benefits: {
         eyebrow: "Why This Route",
@@ -1024,7 +1013,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             icon: "cashier",
           },
         ],
-        media: media("partnership-benefits"),
       },
       steps: {
         eyebrow: "Start Steps",
@@ -1101,7 +1089,6 @@ const marketContent: Localized<BahrainMarketContent> = {
         title: "Tracking, campaign help, and operating guidance that support real follow-up.",
         description:
           "Once the route is clear, you need practical support: reports, materials, coordination, and a cleaner way to move forward.",
-        media: media("partnership-tools"),
         cards: [
           {
             title: "Cleaner reporting",
@@ -1165,7 +1152,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             external: true,
           },
         ],
-        media: media("partnership-final-cta"),
       },
     },
     faq: {
@@ -1279,7 +1265,6 @@ const marketContent: Localized<BahrainMarketContent> = {
             icon: "message",
           },
         ],
-        media: media("faq-support"),
       },
     },
   },
