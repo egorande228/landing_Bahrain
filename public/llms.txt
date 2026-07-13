@@ -1,0 +1,15 @@
+# MELBET Bahrain
+
+Site: https://melbet-bahrain.com/
+Default language: Arabic (`ar`)
+Alternate language: English (`en`) via `?lang=en`
+
+Public pages:
+- / : Homepage covering sports, casino, offers, and support navigation.
+- /partnership : Partnership page describing partner and agent routes.
+- /faq : FAQ page for player and partnership questions.
+
+English variants:
+- /?lang=en
+- /partnership?lang=en
+- /faq?lang=en
